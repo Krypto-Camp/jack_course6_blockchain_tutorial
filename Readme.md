@@ -1,4 +1,3 @@
-# 練習：讓 Contact 出現
 
 # **練習：讓 Contact 出現**
 
