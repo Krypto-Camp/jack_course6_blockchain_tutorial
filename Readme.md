@@ -11,7 +11,7 @@ github: [https://github.com/Krypto-Camp/blockchain-tutorial](https://github.com/
 
 ## 2.前端 UI 處理
 
-```json
+```
 git clone https://github.com/Krypto-Camp/blockchain-tutorial.git
 cd blockchain-tutorial/contacts
 npm install
@@ -26,7 +26,7 @@ VS  Code 開啟 blockchain-tutorial 資料夾
 
 truffle-config.js 中將 developemnt: 區塊的註解符號拿掉
 
-```json
+```
 networks: {
     // Useful for testing. The `development` name is special - truffle uses it by default
     // if it's defined here and no other network is specified at the command line.
@@ -57,7 +57,7 @@ compilers 下的 version 設定可指定 solidity 版本，若要指定版本可
 
 Terminal 中將路徑移至 contracts 目錄，執行下列指令
 
-```json
+```
 truffle compile
 truffle migrate
 ```
@@ -68,7 +68,7 @@ truffle migrate
 
 若部署之後想要再次部署，migrations目錄中需增加新的 js，否則執行 truffle migrate 指令不會重新部署，此時可用 - - reset 參數重新部署
 
-```json
+```
 truffle migrate --reset
 ```
 
@@ -81,7 +81,7 @@ truffle migrate --reset
     
     (1). 開啟 contracts\build\contracts 目錄下的 Contacts.json ，複製 abi 項目中括符 [ ..... ] 包起來的內容
     
-    ```json
+    ```
     "abi": [
     ......  從這一行開始複製  .........
     
@@ -119,7 +119,7 @@ truffle migrate --reset
     
     (2). 將 config.js 的 CONTACT_ABI 項目的 [ ..... ] 的內容刪掉,然後貼上新ABI的內容
     
-    ```json
+    ```
     export const CONTACT_ADDRESS = '0x07d44Dea0708Fec5Cf61e18d35dECCDcB00079D0'
     
     export const CONTACT_ABI = [
